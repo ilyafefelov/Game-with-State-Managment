@@ -188,7 +188,7 @@ export class FallingRight extends State {
     this.player.maxFrame = 6;
   }
   handleInput(input) {
-    if (this.player.onGround()) this.player.setState(states.STANDING_LEFT);
+    if (this.player.onGround()) this.player.setState(states.STANDING_RIGHT);
     else if (input === "PRESS left") this.player.setState(states.FALLING_LEFT);
   }
 }
